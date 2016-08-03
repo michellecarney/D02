@@ -27,13 +27,22 @@
 # should be only two statements in the body of this function, not four.
 ################################################################################
 # Write your functions below:
-# Body
+def do_twice(f, v):
+    f(v)
+    f(v)
 
+def print_twice(v):
+    print(v)
+    print(v)
 
+def do_four(f, v):
+    do_twice(f,v)
+    do_twice(f,v)
 
+do_twice(print_twice, 'spam')
+print('')
 
-
-
+do_four(print_twice, 'spam')
 
 # Write your functions above:
 ################################################################################

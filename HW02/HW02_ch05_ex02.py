@@ -23,8 +23,24 @@
 
 
 
+def check_fermat(a,b,c,n):
+	if n>2:
+		(a**n) + (b**n) == (c**n)
+		print('Holy smokes, Fermat was wrong!')
+	else:
+		'no that doesnt work'
 
 
+def check_fermat_ints():
+	a = input("what is your a?")
+	a = int(a)
+	b = input("what is your b?")
+	b = int(b)
+	c = input("what is your c?")
+	c = int(c)
+	n = input("what is your n? (n>2)")
+	n = int(n)
+	check_fermat(a,b,c,n)
 
 
 
@@ -34,13 +50,13 @@
 def main():
     """Call your function within this function.
     When complete have one function call in this function:
-    check_fermat_ints(1,2,3,4)
+    check_fermat_ints
     and two functions defined in the body:
     check_fermat_ints()
     check_fermat()
     """
     print("Hello World!")
-
+    check_fermat_ints()
 
 
 if __name__ == "__main__":

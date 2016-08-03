@@ -13,7 +13,11 @@
 #                                                                  monty
 ################################################################################
 # Write your function below:
-# Body
+def right_justify(s):
+    length = len(s)
+    addlength = 70-length #find the length that we need to add to the string
+    print(' '*addlength + s)
+
 
 
 

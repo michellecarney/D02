@@ -23,10 +23,52 @@
 # Write your functions below:
 # Body
 
+def is_triangle(a,b,c):
+    if a+b < c:
+        print('No')
+    elif a+b > c:
+        print('yes')
+    elif a+b == c:
+        print('yes')
+    elif b+c < a:
+        print('No')
+    elif b+c > a:
+        print('yes')
+    elif b+c == a:
+        print('yes')
+    elif a+c < b:
+        print('no')
+    elif a+c > b:
+        print('yes')
+    elif a+c == b:
+        print('yes')
 
 
-
-
+def check_stick_lengths():
+    a = input("what is your a?")
+    a = int(a)
+    b = input("what is your b?")
+    b = int(b)
+    c = input("what is your c?")
+    c = int(c)
+    if a+b < c:
+        print('No')
+    elif a+b > c:
+        print('yes')
+    elif a+b == c:
+        print('yes')
+    elif b+c < a:
+        print('No')
+    elif b+c > a:
+        print('yes')
+    elif b+c == a:
+        print('yes')
+    elif a+c < b:
+        print('no')
+    elif a+c > b:
+        print('yes')
+    elif a+c == b:
+        print('yes')
 
 
 
@@ -47,6 +89,12 @@ def main():
     print("Hello World!")
 
 
+is_triangle(1,2,3)
+is_triangle(1,2,4)
+is_triangle(1,5,3)
+is_triangle(6,2,3)
+
+check_stick_lengths()
 
 if __name__ == "__main__":
     main()
